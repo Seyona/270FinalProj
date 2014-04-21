@@ -85,6 +85,7 @@ public class BSTGUI {
                             personNum++;
                             if (!out.contains(per)) {
                                 System.out.println(per + " is the " + personNum + " person in the tree");
+                                break;
                             }
                         }
 
