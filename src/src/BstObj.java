@@ -59,6 +59,7 @@ public class BstObj {
         return inOrder;
     }
 
+
     /**
      * Insert the given parameter into this tree. Duplicates are NOT allowed, in
      * which case, an IllegalArgumentException must be thrown pre: Person obj is
