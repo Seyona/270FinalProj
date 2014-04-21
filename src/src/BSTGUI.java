@@ -14,6 +14,7 @@ public class BSTGUI {
             System.out.println("Press 3 to find a person in a binary tree");
             System.out.println("Press 4 to print out the binary search tree");
             System.out.println("Press 5 to find the number the Person is in the tree");
+            System.out.println("Press 6 to delete the tree");
             System.out.println("Press 0 to exit the program");
             answer = in.nextInt();
 
@@ -91,6 +92,12 @@ public class BSTGUI {
 
                     }
                 }
+            }
+
+            if (answer == 6) {
+                BST = null;
+                System.out.println("Tree has been deleted");
+                System.out.println();
             }
 
         }
