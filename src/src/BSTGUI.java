@@ -4,11 +4,11 @@ import java.util.Scanner;
  * Created by Lappy486 on 4/20/14.
  */
 public class BSTGUI {
-    public static void main(String [] args){
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int answer = 6;
         BstObj BST = new BstObj();
-        while(answer != 0){
+        while (answer != 0) {
             System.out.println("Press 1 to insert a person in a binary tree");
             System.out.println("Press 2 to delete a person in a binary tree");
             System.out.println("Press 3 to find a person in a binary tree");
@@ -16,7 +16,7 @@ public class BSTGUI {
             System.out.println("Press 0 to exit the program");
             answer = in.nextInt();
 
-            if (answer == 1){
+            if (answer == 1) {
                 System.out.println("Please enter the persons first name");
                 String firstName = in.next();
                 System.out.println("Please enter the persons last name");
@@ -25,7 +25,7 @@ public class BSTGUI {
                 int personAge = in.nextInt();
                 System.out.println("Please enter the State initials the person was born in");
                 String state = in.next();
-                Person person = new Person(firstName,lastName,personAge,state);
+                Person person = new Person(firstName, lastName, personAge, state);
 
 
                 BST.insert(person);
@@ -33,7 +33,7 @@ public class BSTGUI {
 
             }
 
-            if (answer == 2){
+            if (answer == 2) {
                 System.out.println("Please enter the persons first name");
                 String firstName = in.next();
                 System.out.println("Please enter the persons last name");
@@ -42,11 +42,11 @@ public class BSTGUI {
                 int personAge = in.nextInt();
                 System.out.println("Please enter the State initials the person was born in");
                 String state = in.next();
-                Person person = new Person(firstName,lastName,personAge,state);
+                Person person = new Person(firstName, lastName, personAge, state);
                 BST.delete(person);
                 System.out.println("Person Deleted");
             }
-            if (answer == 3){
+            if (answer == 3) {
                 System.out.println("Please enter the persons first name");
                 String firstName = in.next();
                 System.out.println("Please enter the persons last name");
@@ -55,16 +55,16 @@ public class BSTGUI {
                 int personAge = in.nextInt();
                 System.out.println("Please enter the State initials the person was born in");
                 String state = in.next();
-                Person person = new Person(firstName,lastName,personAge,state);
-                if (BST.find(person)){
+                Person person = new Person(firstName, lastName, personAge, state);
+                if (BST.find(person)) {
                     System.out.println("Person is in the Tree");
                 }
-                if(!BST.find(person)){
+                if (!BST.find(person)) {
                     System.out.println("Person is not in the Tree");
                 }
 
             }
-            if (answer ==4){
+            if (answer == 4) {
                 System.out.println(BST.nodesInOrder());
             }
 
