@@ -70,8 +70,7 @@ public class BstObj {
     public void insert(Person pVal) {
         if (!find(pVal)) {
             root = insert(root, pVal);
-        }
-        else {
+        } else {
             throw new IllegalArgumentException();
         }
     }
@@ -86,11 +85,9 @@ public class BstObj {
     private TreeNode insert(TreeNode next, Person pVal) {
         if (next == null) {
             next = new TreeNode(pVal, null, null);
-        }
-        else if (pVal.compareTo(next.getVal()) < 0) {
+        } else if (pVal.compareTo(next.getVal()) < 0) {
             next.setLkid(insert(next.getLkid(), pVal));
-        }
-        else if (pVal.compareTo(next.getVal()) > 0) {
+        } else if (pVal.compareTo(next.getVal()) > 0) {
             next.setRkid(insert(next.getRkid(), pVal));
         }
         return next;
@@ -109,7 +106,7 @@ public class BstObj {
     /**
      * private find method used for recursion
      *
-     * @param next TreeNode Obj
+     * @param next   TreeNode Obj
      * @param person Person Obj passed through find
      * @return Bool returning true if val person is in tree, false otherwise
      */
@@ -123,8 +120,7 @@ public class BstObj {
 
         if (next.getVal().compareTo(person) == 1) {
             return find(next.getLkid(), person);
-        }
-        else {
+        } else {
             return find(next.getRkid(), person);
         }
 
@@ -145,7 +141,7 @@ public class BstObj {
     /**
      * Private delete method used for recursion
      *
-     * @param next Tree node Root
+     * @param next   Tree node Root
      * @param person Value looking to be deleted
      */
     private TreeNode delete(TreeNode next, Person person) {

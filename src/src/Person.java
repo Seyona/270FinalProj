@@ -12,14 +12,10 @@ public class Person {
     /**
      * Initialize this person to the given parameters
      *
-     * @param pFname
-     *            First Name
-     * @param pLname
-     *            Last Name
-     * @param pAge
-     *            Their Age
-     * @param pState
-     *            State of Origin
+     * @param pFname First Name
+     * @param pLname Last Name
+     * @param pAge   Their Age
+     * @param pState State of Origin
      */
     public Person(String pFname, String pLname, int pAge, String pState) {
         this.fName = pFname;
@@ -40,7 +36,7 @@ public class Person {
     /**
      * Get all fields of the Person class
      *
-     * @return lastname,firstname,age,state
+     * @return lastname, firstname, age, state
      */
     public String allFields() {
         return this.lName + "," + this.fName + "," + this.age + ","
@@ -50,8 +46,7 @@ public class Person {
     /**
      * comepare two keys from different Person classes
      *
-     * @param otherPerson
-     *            Person class used for comparsion
+     * @param otherPerson Person class used for comparsion
      * @return this < given -1, this == given 0, this > given 1
      */
     public int compareTo(Person otherPerson) {
