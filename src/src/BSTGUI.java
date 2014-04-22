@@ -13,7 +13,7 @@ public class BSTGUI {
             System.out.println("Press 2 to delete a person in a binary tree");
             System.out.println("Press 3 to find a person in a binary tree");
             System.out.println("Press 4 to print out the binary search tree");
-            System.out.println("Press 5 to find the number the Person is in the tree");
+            System.out.println("Press 5 to find the number of the Person is in the tree");
             System.out.println("Press 6 to delete the tree");
             System.out.println("Press 0 to exit the program");
             answer = in.nextInt();
